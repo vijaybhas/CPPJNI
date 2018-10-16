@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cppJNI/codeJava.iml" filepath="$PROJECT_DIR$/cppJNI/codeJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cppJNI/cppJNI.iml" filepath="$PROJECT_DIR$/cppJNI/cppJNI.iml" />
+    </modules>
+  </component>
+</project>

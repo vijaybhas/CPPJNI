@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_appjava" default="compile.module.appjava">
+  <dirname property="module.appjava.basedir" file="${ant.file.module_appjava}"/>
+  
+  <property name="module.jdk.home.appjava" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.appjava" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.appjava" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.appjava" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="appjava.output.dir" value="${module.appjava.basedir}/out/production/appjava"/>
+  <property name="appjava.testoutput.dir" value="${module.appjava.basedir}/out/test/appjava"/>
+  
+  <path id="appjava.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="appjava.module.production.classpath">
+    <path refid="${module.jdk.classpath.appjava}"/>
+  </path>
+  
+  <path id="appjava.runtime.production.module.classpath">
+    <pathelement location="${appjava.output.dir}"/>
+  </path>
+  
+  <path id="appjava.module.classpath">
+    <path refid="${module.jdk.classpath.appjava}"/>
+    <pathelement location="${appjava.output.dir}"/>
+  </path>
+  
+  <path id="appjava.runtime.module.classpath">
+    <pathelement location="${appjava.testoutput.dir}"/>
+    <pathelement location="${appjava.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.appjava">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.appjava">
+    <patternset refid="excluded.from.module.appjava"/>
+  </patternset>
+  
+  <path id="appjava.module.sourcepath">
+    <dirset dir="${module.appjava.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.appjava" depends="compile.module.appjava.production,compile.module.appjava.tests" description="Compile module appjava"/>
+  
+  <target name="compile.module.appjava.production" depends="register.custom.compilers" description="Compile module appjava; production classes">
+    <mkdir dir="${appjava.output.dir}"/>
+    <javac2 destdir="${appjava.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.appjava}/javac">
+      <compilerarg line="${compiler.args.appjava}"/>
+      <bootclasspath refid="appjava.module.bootclasspath"/>
+      <classpath refid="appjava.module.production.classpath"/>
+      <src refid="appjava.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.appjava"/>
+    </javac2>
+    
+    <copy todir="${appjava.output.dir}">
+      <fileset dir="${module.appjava.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.appjava.tests" depends="register.custom.compilers,compile.module.appjava.production" description="compile module appjava; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.appjava" description="cleanup module">
+    <delete dir="${appjava.output.dir}"/>
+    <delete dir="${appjava.testoutput.dir}"/>
+  </target>
+</project>

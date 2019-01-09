@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="766fbb25-8b57-484e-b7f5-f79555dbf0e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/vijay.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/AUTOPASSJ10_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/appjava/appjava/AutopassDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppCpp/AppCpp/AppCpp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../AppCpp/AppCpp/AppCpp.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppCpp/AppCpp/x64/Debug/vc141.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../AppCpp/AppCpp/x64/Debug/vc141.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppCpp/x64/Debug/AppCpp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../AppCpp/x64/Debug/AppCpp.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppCpp/x64/Debug/AppCpp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../AppCpp/x64/Debug/AppCpp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appjava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/appjava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/appjava/Factorial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/appjava/Factorial.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,13 +21,13 @@
     <session id="-251304541">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -67,23 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/appjava/Factorial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/appjava/appjava/AutopassDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="390">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -121,6 +98,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -149,7 +127,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,13 +190,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.Factorial" />
-      <item itemvalue="Application.Factorial (1)" />
       <item itemvalue="Application.AutopassDemo" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.AutopassDemo" />
-        <item itemvalue="Application.Factorial (1)" />
         <item itemvalue="Application.Factorial" />
       </list>
     </recent_temporary>
@@ -250,7 +225,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -297,13 +272,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/appjava/Factorial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Telemtry/AUTOPASSJ10.8.0/autopassj-core-10.8.0.jar!/com/hp/autopassj/core/AutopassJ.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -313,11 +281,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/appjava/appjava/AutopassDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="493">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/appjava/Factorial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
